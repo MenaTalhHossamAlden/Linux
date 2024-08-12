@@ -30,19 +30,24 @@ Like other OSs, Linux distribution is provided on a removable media like USB dri
 **1. Booting the VM from the ISO:**
 ISO Attachment: The ISO image is attached to the VM as a virtual CD/DVD drive.
 Boot Sequence: When the VM starts, it checks for bootable media, finds the ISO, and begins the boot process.
+
 **2. Loading the Bootloader:**
 Bootloader Execution: The bootloader is a small program located on the ISO. The VM loads this bootloader into memory (RAM) and executes it.
 Bootloader Role: The bootloader's primary job is to load the operating system kernel into memory and pass control to it.
+
 **3. Booting the OS Kernel:**
 Kernel Loading: The bootloader loads the OS kernel from the ISO image into RAM.
 Kernel Initialization: The kernel initializes the system, setting up hardware, memory management, and essential system services.
+
 **4. Launching the Installer:**
 Installer Start: After the kernel has initialized the basic system, it launches the installer program.
 Installer Role: The installer provides a user interface (either graphical or text-based) that guides you through the OS installation process. This includes selecting language, partitioning the disk, configuring network settings, and more.
+
 **5. Installing the OS and Packages:**
 Installation Process: The installer copies the OS files from the ISO (or downloads them if necessary) to the VM's virtual hard drive.
 Package Installation: Any additional software packages or updates required by the OS are also installed at this stage.
 Configuration: The installer applies the selected configurations (such as user accounts, timezone, and network settings) to the new OS installation.
+
 **6. Finalization and Reboot:**
 Completing the Installation: Once all files are copied, packages installed, and configurations applied, the installer finishes the setup.
 Reboot: The VM is then rebooted, and this time, it boots from the newly installed OS on the virtual hard drive, rather than from the ISO.
